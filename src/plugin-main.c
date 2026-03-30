@@ -85,6 +85,7 @@ struct retro_filter_data {
 
 static const char *retro_get_name(void *unused)
 {
+	UNUSED_PARAMETER(unused);
 	return "確率共鳴フィルタ";
 }
 
@@ -135,6 +136,7 @@ static void retro_video_tick(void *data, float seconds)
 
 static void retro_render(void *data, gs_effect_t *effect)
 {
+	UNUSED_PARAMETER(effect);
 	struct retro_filter_data *filter = data;
 	if (!filter->effect) {
 		obs_source_skip_video_filter(filter->context);
@@ -152,6 +154,7 @@ static void retro_render(void *data, gs_effect_t *effect)
 
 static obs_properties_t *retro_properties(void *data)
 {
+	UNUSED_PARAMETER(data);
 	obs_properties_t *props = obs_properties_create();
 	obs_properties_add_bool(props, "use_monochrome", "白黒モード");
 	obs_properties_add_int_slider(props, "noise_amount", "ノイズ強度", 0, 100, 1);
