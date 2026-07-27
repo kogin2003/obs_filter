@@ -36,8 +36,8 @@
             "bundleId": "com.example.plugintemplate-for-obs"
         }
     },
-    "name": "retro-filter",
-    "displayName": "Plugin Template for OBS",
+    "name": "sr-filter",
+    "displayName": "Stochastic Resonance Filter",
     "version": "1.0.0",
     "author": "Your Name Here",
     "website": "https://example.com",
